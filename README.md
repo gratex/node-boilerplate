@@ -28,7 +28,31 @@ Branches:
 - cli-boilerplate - quickly create command line tools, using node.js
 - d3-boilerplate - create d3 charts (web, cli)
 
- 
+
+## Using
+In the case someone wants to use this:
+
+Pick a branch that fits your needs, and make 
+
+	# your project here
+	mkdir selenium-repl
+	cd selenium-repl
+
+	git init 
+
+	# map boilerplate to remote with special name not origin
+	git fetch \
+		https://github.com/ainthek/node-boilerplate \
+		cli-boilerplate:refs/remotes/boilerplate/cli-boilerplate
+
+	# create new repo on github and set as origin now
+	git remote add origin https://github.com/ainthek/selenium-repl.git
+	git push -u origin master
+
+
+Updating boilerplate parts of your code:
+
+	TODO:
 
 
 ## Tools Installed
