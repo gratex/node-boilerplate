@@ -30,30 +30,21 @@ Branches:
 
 
 ## Using
-In the case someone wants to use this:
 
-Pick a branch that fits your needs, and make 
+All of you , can just FORK IT, 
+for me ro fok myslef I have to do this work:
 
-	# your project here
-	mkdir selenium-repl
-	cd selenium-repl
+	git clone -b cli-boilerplate --single-branch https://github.com/ainthek/node-boilerplate.git xpath-expression
+	cd xpath-expression
+	git remote rename origin upstream
+	git branch -m cli-boilerplate master
+	git remote add origin https://github.com/ainthek/xpath-expression
 
-	git init 
-
-	# map boilerplate to remote with special name not origin
-	git fetch \
-		https://github.com/ainthek/node-boilerplate \
-		cli-boilerplate:refs/remotes/boilerplate/cli-boilerplate
-
-	# create new repo on github and set as origin now
-	git remote add origin https://github.com/ainthek/selenium-repl.git
+	# create repo on github and 
 	git push -u origin master
-
-
-Updating boilerplate parts of your code:
-
-	TODO:
-
+ 
+	npm install
+	npm test
 
 ## Tools Installed
 
