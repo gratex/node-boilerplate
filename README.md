@@ -28,8 +28,23 @@ Branches:
 - cli-boilerplate - quickly create command line tools, using node.js
 - d3-boilerplate - create d3 charts (web, cli)
 
- 
 
+## Using
+
+All of you , can just FORK IT, 
+for me ro fok myslef I have to do this work:
+
+	git clone -b cli-boilerplate --single-branch https://github.com/ainthek/node-boilerplate.git xpath-expression
+	cd xpath-expression
+	git remote rename origin upstream
+	git branch -m cli-boilerplate master
+	git remote add origin https://github.com/ainthek/xpath-expression
+
+	# create repo on github and 
+	git push -u origin master
+ 
+	npm install
+	npm test
 
 ## Tools Installed
 
