@@ -33,14 +33,24 @@ Branches:
 
 All of you , can just FORK IT, 
 for me ro fok myslef I have to do this work:
+	
+	# sample name
+	NAME=xpath-expression 
 
-	git clone -b cli-boilerplate --single-branch https://github.com/ainthek/node-boilerplate.git xpath-expression
-	cd xpath-expression
+	git clone -b cli-boilerplate --single-branch https://github.com/ainthek/node-boilerplate.git $NAME
+	cd $NAME
 	git remote rename origin upstream
 	git branch -m cli-boilerplate master
-	git remote add origin https://github.com/ainthek/xpath-expression
+	git remote rename origin template
+	git remote add origin https://github.com/ainthek/$NAME
 
 	# create repo on github and 
+	# .....
+
+	# modify package.json and readme
+	#.....
+
+	
 	git push -u origin master
  
 	npm install
