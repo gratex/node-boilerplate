@@ -34,13 +34,16 @@ Branches:
 All of you , can just FORK IT, 
 for me ro fok myslef I have to do this work:
 	
+	cd ..
+	
 	# sample name
 	NAME=xpath-expression 
+	TEMPLATE=cli-boilerplate
 
-	git clone -b cli-boilerplate --single-branch https://github.com/ainthek/node-boilerplate.git $NAME
+	git clone -b $TEMPLATE --single-branch https://github.com/ainthek/node-boilerplate.git $NAME
 	cd $NAME
 	git remote rename origin upstream
-	git branch -m cli-boilerplate master
+	git branch -m $TEMPLATE master
 	git remote rename origin template
 	git remote add origin https://github.com/ainthek/$NAME
 
