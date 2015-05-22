@@ -32,7 +32,7 @@ Branches:
 ## Using
 
 All of you , can just FORK IT, 
-for me ro fok myslef I have to do this work:
+for me to fork myslef I have to do this work:
 	
 	cd ..
 	
@@ -44,7 +44,7 @@ for me ro fok myslef I have to do this work:
 	cd $NAME
 	git remote rename origin upstream
 	git branch -m $TEMPLATE master
-	git remote rename origin template
+	
 	git remote add origin https://github.com/ainthek/$NAME
 
 	# create repo on github and 
@@ -136,15 +136,4 @@ Useful commands used when creating this boilerplate, and few notes:
 
 
 
-## Review
 
-This is summary of top level modules included in dependencies and devDependencies used by this boilerplate
-
-
-|name|version|description|path|
-|----|-------|-----------|----|
-|[bluebird](https://github.com/petkaantonov/bluebird)|2.7.1|Full featured Promises/A+ implementation with exceptionally good performance|./node_modules/bluebird/package.json|
-|[jshint](http://jshint.com/)|2.5.11|Static analysis tool for JavaScript|./node_modules/jshint/package.json|
-|[mocha]()|2.1.0|simple, flexible, fun test framework|./node_modules/mocha/package.json|
-|[nsp](https://nodesecurity.io)|0.5.2|Node Security Project command line tool|./node_modules/nsp/package.json|
-|[plato](https://github.com/es-analysis/plato)|1.3.0|JavaScript source analysis and visualizer|./node_modules/plato/package.json|
