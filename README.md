@@ -17,6 +17,51 @@ Libraries:
 
 - Promises - since we code in promise style, good lib was needed, we have chosen bluebird.
 
+## Branches
+
+There are several branches created. The goal is to test if we can
+create template for different types of projects (adding modules, dev-modules, samples)
+and keep them updated from master branch by simple git merges.
+
+Branches:
+
+- cli-boilerplate - quickly create command line tools, using node.js
+- d3-boilerplate - create d3 charts (web, cli)
+
+
+## Using
+
+All of you , can just FORK IT, 
+for me to fork myslef I have to do this work:
+	
+	cd ..
+	
+	# sample name
+	NAME=xpath-expression 
+	TEMPLATE=cli-boilerplate
+
+	git clone -b $TEMPLATE --single-branch https://github.com/ainthek/node-boilerplate.git $NAME
+	cd $NAME
+	git remote rename origin upstream
+	git branch -m $TEMPLATE master
+	
+	git remote add origin https://github.com/ainthek/$NAME
+
+	# create repo on github and 
+	# .....
+
+	# modify package.json and readme
+	#.....
+
+	
+	git push -u origin master
+ 
+	npm install
+	npm test
+
+### To update your project with template
+
+	git fetch upstream; git merge upstream/cli-boilerplate master
 
 ## Tools Installed
 
@@ -89,15 +134,6 @@ Useful commands used when creating this boilerplate, and few notes:
 	# libs
 	npm install --save bluebird|name|version|homepage|description|path|
 
-## Review
-
-This is summary of top level modules included in dependencies and devDependencies used by this boilerplate
 
 
-|name|version|description|path|
-|----|-------|-----------|----|
-|[bluebird](https://github.com/petkaantonov/bluebird)|2.7.1|Full featured Promises/A+ implementation with exceptionally good performance|./node_modules/bluebird/package.json|
-|[jshint](http://jshint.com/)|2.5.11|Static analysis tool for JavaScript|./node_modules/jshint/package.json|
-|[mocha]()|2.1.0|simple, flexible, fun test framework|./node_modules/mocha/package.json|
-|[nsp](https://nodesecurity.io)|0.5.2|Node Security Project command line tool|./node_modules/nsp/package.json|
-|[plato](https://github.com/es-analysis/plato)|1.3.0|JavaScript source analysis and visualizer|./node_modules/plato/package.json|
+
